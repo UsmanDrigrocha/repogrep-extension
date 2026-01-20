@@ -1,0 +1,16 @@
+{
+    "name": "RepoGrep GitHub Redirect",
+    "description": "Press R on a GitHub repo to open it in RepoGrep",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "*://github.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
